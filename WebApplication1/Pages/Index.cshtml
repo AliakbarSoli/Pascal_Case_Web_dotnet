@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @Model.P_Case</h1>
+</div>
+
+<form method="post" asp-page="Index">
+    <div class="form-group">
+        <label asp-for="P_Case"></label>
+        <input asp-for="P_Case" class="form-control" placeholder="Enter Name" autocomplete="off" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
